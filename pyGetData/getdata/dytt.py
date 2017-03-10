@@ -58,7 +58,7 @@ class Dytt(object):
                 f.write(movieInfo)
         else:
             with open(self._filePath, 'w', encoding='utf-8') as f:
-                f.write(movieInfo.encode())
+                f.write(movieInfo())
 
     def searchMoive(self, keyword):
         searchUrl = self.createKey(keyword)
